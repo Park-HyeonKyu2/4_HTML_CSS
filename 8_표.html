@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표</title>
+    <style>
+        table {
+            width: 600px;
+            /* border-collapse는 2개였던 테두리 선들이 하나로 합쳐진다. */
+            border-collapse: collapse;
+            border: 1px;
+        }
+        thead {
+            background-color: deepskyblue;
+            color:white
+        }
+        tbody td {
+            padding: 12px; /* 안쪽 여백 */
+            border-bottom: 1px solid #ddd;
+            /* 경계선을 아래에만 1px 직선으로 #ddd색으로 지정 */
+        }
+        /* tbody 자손에 tr에 마우스를 올리면 상호작용 */
+        tbody tr:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" width="50%">
+        <!-- border=""은 테이블의 선을 만들어주는 속성이다. -->
+        <tr>
+            <!-- <tr>은 표의 행을 만들 때 사용 -->
+            <!-- <td>는 하나의 셀 -->
+            <!-- 1번, 2번 셀을 합치기 위해선 하나를 지우고 colspan 속성을 사용한다. -->
+            <!-- colspan="2"은 가로 셀 2개가 합쳐졌다는 의미 -->
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <!-- rowspan="2"는 세로 셀 2개가 합쳐졌다는 의미 -->
+            <td rowspan="2">5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <!--<th>는 표의 제목, 두껍고 가운데 정렬 -->
+                <th>이름</th>
+                <th>과목</th>
+                <th>점수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">김사과</td>
+                <td>HTML</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>반하나</td>
+                <td>JavaScript</td>
+                <td>88</td>
+            </tr>
+        </tbody>
+        <!-- <thead>는 테이블의 헤드, <tbody>는 테이블의 body 기능은 없지만 css에서 선택가능하다. -->
+    </table>
+
+</body>
+
+</html>

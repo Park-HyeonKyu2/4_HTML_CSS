@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS 우선순위 체크 예제</title>
+
+  <style>
+    p {
+      color: blue;
+    }
+
+    .text {
+      color: green;
+    }
+
+    #target {
+      color: red;
+    }
+
+    .text {
+      color: purple;
+    }
+
+    .force {
+      color: orange !important;
+    }
+
+    p { color : deeppink; }
+  </style>
+</head>
+<body>
+
+  <h2>CSS 우선순위 확인</h2>
+
+  <p id="target" class="text">우선순위 : id > class > 태그 선택자
+  </p>
+
+  <p id="target" class="text force">우선순위 : !important > id > class > 태그 선택자 (!important 무조건 최우선)
+
+  </p>
+
+  <p id="target" class="text force" style="color: black;">우선순위 : !important > 인라인 선택자 > id > class > 태그 선택자 (!important 무조건 최우선)
+
+  </p>
+
+  <p id="target" class="text" style="color: black;">우선순위 : 인라인 선택자 > id > class > 태그 선택자
+
+  </p>
+
+</body>
+</html>

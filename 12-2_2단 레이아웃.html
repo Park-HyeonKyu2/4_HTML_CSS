@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 900px;
+            height: 600px;
+            border: 2px solid #000;
+        }
+
+        header {
+            padding: 10px;
+            margin: 10px;
+            height: 50px;
+            border: 2px solid #000;
+        }
+
+        main {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #000;
+        }
+
+        .left {
+            float: left;
+            padding: 10px;
+            margin: 5px;
+            width: 33%;
+            height: 270px;
+            border: 2px solid #000;
+        }
+
+        .middle {
+            float: left;
+            padding: 10px;
+            margin: 5px;
+            width: 33%;
+            height: 270px;
+            border: 2px solid #000;
+        }
+
+        .right-up {
+            float: left;
+            padding: 10px;
+            margin: 5px;
+            width: 30%;
+            height: 130px;
+            border: 2px solid #000;
+        }
+
+        .right-down {
+            float: left;
+            padding: 10px;
+            margin: 5px;
+            width: 30%;
+            height: 130px;
+            border: 2px solid #000;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            padding: 10px;
+            margin: 10px;
+            height: 200px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            헤더 영역
+        </header>
+        <main>
+            <section class="left">왼쪽 컨텐츠 영역</section>
+            <section class="middle">중앙 컨텐츠 영역</section>
+            <aside class="right-up">오른쪽 위 사이드 영역</aside>
+            <aside class="right-down">오른쪽 아래 사이드 영역</aside>
+        <div class="clear"></div>
+        </main>
+        <footer>
+            푸터영역
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>

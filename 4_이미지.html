@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지</title>
+</head>
+
+<body>
+    <!-- 웹에서 사용 가능한 이미지 포멧
+        png, jpeg/jpg, gif, webp, svg 등
+        png : 투명채널을 가지고 있어 투명도 조절 가능하다.
+        jpeg/jpg : 압축 알고리즘을 이용해 용량을 줄일 수 있다.
+        gif : 여러이미지를 합쳐 시간에 따라 넘긴다. 대신 해상도가 낮다.
+        webp : 모든 기능을 가지고 있으며 용량이 높지 않다. webp를 지원하지 않은 브라우저가 있기 때문에 잘 사용하지 않는다.
+        svg : 이미지를 벡터로 저장한다.
+    -->
+
+    <!-- 파일과 같은 위치의 이미지 넣는 방법 - 절대경로, 상대경로 -->
+    <!-- alt="" : 만약 이미지를 띄울 수 없다면 대신 띄워질 텍스트 -->
+    <!-- 절대경로 -->
+    <!-- 가상 서버를 돌리는 경우 c드라이브 위치를 못찾는다. -->
+    <img src="C:\HyeonKyu\4_HTML_CSS\spring1.png" alt="봄">
+    <img src="https://tcpschool.com/img/logo.png" alt="tcp스쿨 로고">
+
+    <!-- 상대 경로 -->
+    <!-- 현재 작업파일 위치를 기반으로 찾는다. -->
+    <!-- 이미지 태그는 인라인 태그 -->
+    <img src="spring1.png" alt="봄">
+    <img src="images/spring2.png" alt="봄">
+
+</body>
+
+</html>
